@@ -1,9 +1,9 @@
 CREATE TABLE techFighter_characters (
-    id SERIAL PRIAMARY KEY,
-    name TEXT NOT NULL,
+    id SERIAL PRIMARY KEY,
+    fighter_name TEXT NOT NULL,
     hometown TEXT NOT NULL,
     height DEC NOT NULL,
-    weight INTEGER NOT NULL,
-    wins NOT NULL DEFAULT 0
-    losses NOT NULL DEFAULT 0
+    fighter_weight INTEGER NOT NULL,
+    wins INT DEFAULT 0 NOT NULL,
+    losses INT DEFAULT 0 NOT NULL
 );
