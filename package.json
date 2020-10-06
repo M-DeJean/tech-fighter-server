@@ -1,5 +1,5 @@
 {
-  "name": "fight-app",
+  "name": "TechFighter",
   "version": "1.0.0",
   "description": "Server for Tech-Fighter App",
   "main": "src/server.js",
