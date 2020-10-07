@@ -1,3 +1,0 @@
-TRUNCATE
-techFighter_characters
-RESTART IDENTITY CASCADE;
