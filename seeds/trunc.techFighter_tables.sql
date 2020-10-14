@@ -1,5 +1,5 @@
 TRUNCATE
 fighting_styles,
-characters,
+fighters,
 attacks
 RESTART IDENTITY CASCADE;

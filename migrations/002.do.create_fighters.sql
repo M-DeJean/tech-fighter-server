@@ -1,4 +1,4 @@
-CREATE TABLE characters (
+CREATE TABLE fighters (
     id SERIAL PRIMARY KEY,
     fighter_name TEXT NOT NULL,
     hometown TEXT NOT NULL,

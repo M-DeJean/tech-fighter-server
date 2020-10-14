@@ -2,7 +2,7 @@ BEGIN;
 
 TRUNCATE
 fighting_styles,
-characters,
+fighters,
 attacks
 RESTART IDENTITY CASCADE;
 
@@ -15,7 +15,7 @@ VALUES
     ('Wrestling'),
     ('Brazilian Jiu-Jitsu');
 
-INSERT INTO characters(fighter_name, hometown, height, fighter_weight, wins, losses, styleId,  attack, defense, speed , health, stamina)
+INSERT INTO fighters(fighter_name, hometown, height, fighter_weight, wins, losses, styleId,  attack, defense, speed , health, stamina)
 VALUES
     ('Fighter 1', 'Los Angeles, CA', 182, 185, 22, 0, 1, 20, 50, 50, 100, 100),
     ('Fighter 2', 'New York, NY', 163, 145, 22, 3, 2, 20, 50, 50, 100, 125),
@@ -30,16 +30,30 @@ VALUES
 
 INSERT INTO attacks(attack_name, damage, energy_cost, styleId)
 VALUES
-    ('Attack 1', 20, 15, 1),
-    ('Attack 2', 20, 15, 2),
-    ('Attack 3', 20, 15, 5),
-    ('Attack 4', 20, 15, 6),
-    ('Attack 5', 20, 15, 3),
-    ('Attack 6', 20, 15, 1),
-    ('Attack 7', 20, 15, 4),
-    ('Attack 8', 20, 15, 1),
-    ('Attack 9', 20, 15, 2),
-    ('Attack 10', 20, 15, 3);
+    ('Jab', 7, 11, 1),
+    ('Combo', 21, 32, 1),
+    ('Counter Punch', 10, 15, 1),
+    ('Haymaker', 30, 45, 1),
+    ('Left Hook', 12, 18, 2),
+    ('Elbow', 25, 38, 2),
+    ('Leg Kick', 30, 45, 2),
+    ('Flying Knee', 45, 68, 2),
+    ('Straight Punch', 11, 17, 3),
+    ('Side Kick', 20, 30,3),
+    ('Jump Kick', 28, 43, 3),
+    ('Dragon Punch', 50, 75, 3),
+    ('Body Kick', 12, 18, 4),
+    ('Takedown', 20, 15, 4),
+    ('Rear Naked Choke', 30, 45, 4),
+    ('SuperMan Punch', 45, 68, 4),
+    ('Double Leg Takedown', 12, 18, 5),
+    ('Suplex', 20, 30, 5),
+    ('Leg Lock', 30, 45, 5),
+    ('Mega Slam', 40, 60, 5),
+    ('Single Leg Takedown', 10, 15, 6),
+    ('Armbar', 30, 45, 6),
+    ('Kimura', 37, 56, 6),
+    ('Triangle Choke', 55, 83, 6);
 
 
 COMMIT;
