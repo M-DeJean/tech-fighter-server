@@ -15,14 +15,14 @@ VALUES
     ('Wrestling'),
     ('Brazilian Jiu-Jitsu');
 
-INSERT INTO fighters(fighter_name, hometown, height, fighter_weight, wins, losses, styleId, health, stamina)
+INSERT INTO fighters(fighter_name, hometown, height, fighter_weight, wins, losses, styleId, health, stamina, image)
 VALUES
-    ('Fighter 1', 'Los Angeles, CA', 182, 185, 22, 0, 1, 100, 100),
-    ('Fighter 2', 'New York, NY', 163, 145, 22, 3, 2, 100, 125),
-    ('Fighter 3', 'London, England', 175, 200, 30, 1, 3, 100, 90),
-    ('Fighter 4', 'Dallax, TX', 190, 225, 10, 0, 4, 100, 110),
-    ('Fighter 5', 'Miami, FL', 170, 185, 15, 12, 5, 100, 100),
-    ('Fighter 6', 'Mexico City, Mexico', 168, 135, 43, 0, 6, 100, 125);
+    ('Lloyd Springweather', 'Los Angeles, CA', 182, 185, 0, 0, 1, 120, 85, 'https://i.ibb.co/JHW3pC5/boxer.png'),
+    ('Samart', 'Bangkok, Thailand', 163, 145, 0, 0, 2, 90, 125, 'https://i.ibb.co/cypPNhZ/Kickboxer.png'),
+    ('Hanzo', 'Okinawa, Japan', 175, 200, 30, 1, 3, 100, 100, 'https://i.ibb.co/KyJ3V8N/kung-fu.png'),
+    ('Paul Falcon', 'Dallax, Texas', 190, 225, 10, 0, 4, 100, 100, 'https://i.ibb.co/MnJNqmZ/fighter2.png'),
+    ('Flex Leuger', 'Moscow, Russia', 250, 185, 0, 0, 5, 120, 85, 'https://i.ibb.co/3Wmscs7/wrestler.png'),
+    ('Doctor Raja', 'Bhopal, India', 168, 135, 0, 0, 6, 90, 125, 'https://i.ibb.co/x3nNWNN/BJJ.png');
 
 INSERT INTO attacks(attack_name, damage, energy_cost, styleId)
 VALUES

@@ -8,6 +8,7 @@ CREATE TABLE fighters (
     losses INT DEFAULT 0 NOT NULL,
     styleId INT REFERENCES fighting_styles(id) ON DELETE CASCADE NOT NULL,
     health INT NOT NULL,
-    stamina INT NOT NULL
+    stamina INT NOT NULL,
+    image TEXT
 );
 
