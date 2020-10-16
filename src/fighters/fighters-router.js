@@ -28,7 +28,9 @@ FightersRouter
         } else {
             data.losses = res.fighter.losses + 1
         }
-        FightersService.updateFighter(req.app.get('db'), req.params.fighter_id)
+        return FightersService.updateFighter(req.app.get('db'), req.params.fighter_id, data)
+        .then(data => res.json(data))
+        // .catch(next)
     })
 
 FightersRouter

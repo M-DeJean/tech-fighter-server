@@ -19,8 +19,8 @@ const FightersService = {
             .first()
     },
     updateFighter(db, id, data) {
-        return db('fighters')
-        .where('fight.id', id)
+        return db.from('fighters')
+        .where('id', id)
         .update(data)
     }
 }
