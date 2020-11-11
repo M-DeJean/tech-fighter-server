@@ -1,17 +1,50 @@
-# Express Boilerplate!
+## TechFIghter
 
-This is a boilerplate project used for starting new projects!
+[Live App](https://tech-fighter-client.vercel.app)
 
-## Set up
+![Screenshot1](https://i.ibb.co/HFdQQhL/Screen-Shot-2020-11-10-at-8-49-09-PM.png)
+![Screenshot2](https://i.ibb.co/Q6GbDfp/Screen-Shot-2020-11-10-at-8-58-27-PM.png)
+![Screenshot3](https://i.ibb.co/r5WX6yM/Screen-Shot-2020-11-10-at-8-58-59-PM.png)
 
-Complete the following steps to start a new project (NEW-PROJECT-NAME):
+## How To Play 
 
-1. Clone this repository to your local machine `git clone BOILERPLATE-URL NEW-PROJECTS-NAME`
-2. `cd` into the cloned repository
-3. Make a fresh start of the git history for this project with `rm -rf .git && git init`
-4. Install the node dependencies `npm install`
-5. Move the example Environment file to `.env` that will be ignored by git and read by the express server `mv example.env .env`
-6. Edit the contents of the `package.json` to use NEW-PROJECT-NAME instead of `"name": "express-boilerplate",`
+TechFighter is a turn-based fighting game inspired by classic arcade games from the 80s and 90s. <br/> There are 6 different characters to choose from, all with their own fighting styles and attacks. Each character has 3 attacks:
+
+Light(L) Medium(M) Special(S)
+
+Each attack deals a certain amount of damage and costs a certain amount of stamina. Each fighter also has the option to Defend(D), which restores a small amount of health and stamina. After the player attacks, the computer generated opponent will perform a random attack(or defend) and the match will continue until either the player or computer's health reaches 0.
+
+## API Documentation
+
+`/api/fighters`
+- GET - Fetches a list of each character
+
+`/api/fighters:fighter_id`
+- GET - Fetches the selected fighter based upon the requested ID
+
+`/api/fighters/random/:fighter_id`
+- GET - Fetches a random character that doesnt match the requested ID
+
+`/api/attacks`
+- GET - Fetches all available attacks
+
+`/api/attacks/:attack_id`
+- GET - Fetches specific attack based upon requested ID
+
+`api/fighting-styles`
+- GET - Fetches all available fighting styles
+
+`api/fighting-styles/:fighting_style_id`
+- GET -Fetches specific style besed upon requested ID
+
+## STACK
+
+* JavaScript
+* Node
+* React
+* Express
+* HTML
+* CSS
 
 ## Scripts
 
